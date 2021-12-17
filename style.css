@@ -4,6 +4,14 @@
     background-color: #eae5e3;
     text-align: center;
   }
+header{
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
 
   #nav-bar{
     position: relative;
@@ -25,7 +33,7 @@
   display: flex;
   list-style: none;
   align-items: center;
-  font-size: 17px
+  font-size: 20px
   }
 
 .nav-links a{
@@ -65,29 +73,62 @@
     background-color: #2a96b0;
     border-radius: 40%;
   }
+#content{
+  margin-top: 150px;
+}
   .content{
     margin: auto;
     width: 20%;
     margin-top: 3rem;
   }
-  .product {
+  #product {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.trees {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: calc(100% / 3);
+  width: 500px;
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
 }
 
-.product > .level {
+.trees > .level {
   background-color: #ddd;
   color: black;
   padding: 15px 0;
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 30px;
+}
+
+.trees > h2 {
+  margin-top: 15px;
+}
+
+.trees > ol {
+  margin: 15px 0;
+}
+
+.trees > ol > li {
+  padding: 5px 0;
+}
+
+
+
+
+
+
+
+#CatTree1{
+  border-radius: 20%
 }
 
 
@@ -95,4 +136,67 @@
     body {
         background-color: lightblue;
     }
+}
+footer {
+  margin-top: 40px;
+  background-color: #ddd;
+  padding: 5px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: None;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+
+}
+
+footer > span {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  color: #444;
+}
+
+#CatImg{
+  position: relative;
+  width: 60%px;
+  height 250px;
+}
+#CatImg > img {
+  position: fixed;
+  width: 400px;
+  height:400px;
+  top: 100px;
+  left: -200px;
+  transition: 5s;
+}
+#CatImg:hover > img{
+  width: 500px;
+  height:500px;
+  left: 30px;
+  size: 150%;
+}
+
+#CatImg2{
+  position: relative;
+  width: 60%px;
+  height 250px;
+}
+#CatImg2 > img {
+  position: fixed;
+  width: 400px;
+  height:400px;
+  bottom: 100px;
+  right: -200px;
+  transition: 3s;
+}
+#CatImg2:hover > img{
+  width: 500px;
+  height:500px;
+  right: 30px;
 }
